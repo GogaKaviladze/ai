@@ -1,0 +1,28 @@
+# Node
+node_modules
+.next
+pnpm-lock.yaml
+
+# Python
+__pycache__
+*.pyc
+.env
+.env.*
+.venv
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*.so
+
+# virtualenv
+venv/
+
+# testing
+.coverage
+pytest_cache/
+
+# Docker
+volumes/
+
+# macOS
+.DS_Store

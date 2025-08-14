@@ -1,0 +1,40 @@
+[project]
+name = "hansabit-backend"
+version = "0.1.0"
+description = "Backend for Hansabit"
+authors = [{name = "Hansabit"}]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlmodel",
+    "pydantic[email]",
+    "psycopg[binary]",
+    "alembic",
+    "redis",
+    "rq",
+    "python-multipart",
+    "passlib[argon2]",
+    "python-jose[cryptography]",
+    "structlog",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+    "mypy",
+    "pytest",
+    "httpx",
+]
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+select = ["E", "F", "B", "Q", "W"]
+line-length = 88
+
+[tool.mypy]
+plugins = []
+strict = true
